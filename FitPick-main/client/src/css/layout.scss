@@ -1,0 +1,439 @@
+#root {
+    height: 100vh;
+}
+
+html {
+    height: 100%;
+}
+
+/* ----------------------------- Top-Level Setup ---------------------------- */
+.container-primary {
+    width: 100%;
+    height: 100%;
+    padding: 0 24px;
+}
+
+.container-secondary {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    padding-left: 34%;
+    padding-top: 5%;
+}
+
+.map-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 1.125rem;
+    padding: 12px 24px;
+}
+
+.mapName {
+    height: 50px;
+    float: left;
+}
+
+.table-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 1.125rem;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    cursor: pointer;
+}
+
+.table {
+    display: flex;
+    //float: left;
+    width: 100%;
+    flex-direction: column;
+    //align-items: center;
+}
+
+.table-regions {
+    overflow-y: scroll;
+}
+
+.table-header {
+    width: calc(100% - 56px);
+    box-sizing: border-box;
+    margin-left: 24px;
+    margin-right: 32px;
+}
+/*
+.spreadsheet-header-section {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    padding-top: 24px;
+    padding-bottom: 12px;
+}
+*/
+.table-header-button {
+    padding: 0;
+    margin-left: 36px;
+}
+
+.table-header-button-disabled{
+    padding: 0;
+    margin-left: 12px;
+    cursor: default;
+}
+
+.table-header-buttons {
+    float: right;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.table-entry {
+    //margin-left: 10%;
+    //margin-right: 10%;
+    //width: 80%;
+}
+
+.table-entry-column {
+    border-right: 1px solid black;
+}
+
+.deleteRegionButton {
+    padding-top: 15px;
+    //border-right: none;
+}
+
+.regionName {
+    float: left;
+}
+
+.regionNameEdit {
+    //float: left;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+    /*
+        CSS for all modals
+    */
+
+.paddingLeft {
+    padding-left: 25%;
+}
+
+.modal-input-field {
+    height: 30px;
+    margin-left: 5px;
+    float: left;
+    display: block;
+}
+
+.login-modal {
+    height: 300px;
+    width: 900px;
+    display: block;
+    z-index: 1;
+}
+
+.loginModal-header {
+    height: 25%;
+    width: 90%;
+    float: left;
+}
+
+.loginModal-x {
+    height: 25%;
+    width: 10%;
+    float: left;
+}
+
+.signup-modal {
+    height: 400px;
+    width: 900px;
+    display: block;
+    z-index: 1;
+}
+
+.signupModal-header {
+    height: 15%;
+    width: 90%;
+    float: left;
+}
+
+.signupModal-x {
+    height: 15%;
+    width: 10%;
+    float: left;
+}
+
+.update-modal {
+    width: 600px;
+    display: block;
+    z-index: 1;
+}
+
+.deleteMap-modal {
+    width: 600px;
+    height: 150px;
+    display: block;
+    z-index: 1;
+}
+
+.delete-modal-header {
+    height: 35%;
+    width: 92%;
+    float: left;
+}
+
+.deleteModal-x {
+    height: 35%;
+    width: 8%;
+    float: left;
+}
+
+.modal-nameInput-field {
+    margin-left: 34.5%;
+    padding-top: 12px;
+    float: left;
+}
+
+.modal-emailInput-label {
+    margin-left: 35%;
+    padding-top: 12px;
+    float: left;
+}
+
+.modal-passwordInput-label {
+    margin-left: 31.5%;
+    padding-top: 12px;
+    float: left;
+}
+
+.modal-col-gap{
+    column-gap: 0px;
+}
+
+.modal-button-container {
+    margin-left: 10%;
+}
+
+.modal-button {
+    justify-content: space-evenly;
+    margin-top: 5%;
+    margin-left: 10px;
+    float: left;
+    width: 200px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.modal-spacer {
+    height: 50px;
+}
+
+.main-login-modal {
+    padding: 24px 24px 0px 24px;
+}
+
+.modal-error {
+    height: 24px;
+    align-items: center;
+    display: flex;
+}
+
+.col-spacer {
+    width: 24px;
+    display: inline-block;
+}
+
+.map-edit, .table-input, .table-select {
+    width: 100%;
+}
+
+.map-edit-input {
+    padding: 23px 24px 24px 24px !important;
+}
+
+.table-input, .table-select {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.table-input-class {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    //font-size: 1.125rem;
+}
+
+.bottom-text {
+    padding-bottom: 25%;
+}
+
+.mapSelect-redbar {
+    height: 5px;
+    width: 1500px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.mapSelect-blackbar {
+    height: 60px;
+    width: 1500px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.mapSelect-spacing {
+    height: 100px;
+}
+
+.mapSelectionBox {
+    float: left;
+    height: 750px;
+    width: 750px;
+    margin-left: 10%;
+    overflow-y: scroll;
+}
+
+.globeBox {
+    float: left;
+    height: 750px;
+    width: 750px;
+    margin-right: 10%;
+    position: relative;
+}
+
+.mapSelectGlobe {
+    height: 100%;
+}
+
+.mapSelectGlobeImage {
+    height: 92%;
+}
+
+.createNewMap-button {
+    height: 60px;
+    width: 750px;
+    position: absolute;
+    bottom: 0;
+}
+.spreadsheet-header-container {
+    //float: left;
+    margin-top: 50px;
+}
+
+.spreadsheetBackground {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.spreadsheet-header {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.spreadsheet-header-text {
+    display: inline-block;
+    margin-left: 37%;
+}
+
+.spreadsheet-header-name {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.headerLabels {
+    background-color: rgb(215,55,55);
+}
+
+/*
+The following CSS is for icons
+*/
+
+.addRegion {
+    margin-top: 5.5%;
+}
+
+.spreadsheetHeaderIcon {
+    margin-left: 10px;
+}
+
+.regionViewer-header-spacer {
+    margin-top: 5%;
+    margin-left: 50%;
+}
+
+.regionViewer-body {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.RegionViewerLeftSide {
+    float: left;
+    width: 50%;
+}
+
+.RegionViewerRightSide {
+    float: left;
+    width: 50%;
+}
+
+.regionLandmarks {
+    height: 600px;
+}
+
+.regionLandmarks-add-container {
+    height: 40px;
+    width: 100%;
+}
+
+.addLandmark {
+    float: left;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+
+.landmarkInput {
+    float: left;
+    margin-top: 0.5%;
+    margin-left: 0.5%;
+}
+
+.landmarkDeleteButton {
+    padding-left: 20px;
+}
+
+.regionViewerParent {
+    float: left;
+}
+
+.regionViewerParentName{
+    float: left;
+}
+
+.regionViewerNavigation {
+    margin-right: 40%;
+}
+
+.RegionViewerInfoContainer {
+    width: 80%;
+    margin-top: 10px;
+}
+
+.tableFlag {
+    width: 80px;
+    height: 45px;
+}
+
+.viewerFlag {
+    width: 500px;
+    height: 350px;
+}
+
+.NoFlag {
+    width: 500px;
+    height: 100px;
+}
