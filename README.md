@@ -1,2 +1,5 @@
-# World-Data-Mapper
-MERN stack application with a functional GUI. Allows users to create accounts, log in/out, edit account information, create maps, add regions, sort regions by filters, etc. Written from CSE 316 homework 3 codebase.
+# FitPick
+
+Outfit randomizer application (IN PROGRESS)
+
+Currently working on the backend and project initialization.
